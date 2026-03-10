@@ -1,0 +1,61 @@
+name: digital_family_vault
+description: "A secure offline-first document vault for families."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.5
+  flutter_secure_storage: ^9.2.2
+  local_auth: ^3.0.0
+  encrypt: ^5.0.3
+  intl: ^0.20.2
+  camera: ^0.11.1
+  google_fonts: ^6.2.1
+  path: ^1.9.1
+  riverpod_annotation: ^2.3.5
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+  archive: ^3.6.1
+  share_plus: ^10.1.0
+  file_picker: ^8.1.7
+  pdf: ^3.11.1
+  printing: ^5.13.2
+  shimmer: ^3.0.0
+  image_picker: ^1.1.2
+  flutter_tesseract_ocr: ^0.4.24 # Using Tesseract for robust OCR
+  lottie: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  isar_generator: ^3.1.0+1
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.3.9
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#673AB7"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/tessdata/
+    - assets/tessdata_config.json # Add this line
